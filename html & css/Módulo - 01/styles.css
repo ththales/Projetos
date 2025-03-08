@@ -1,0 +1,99 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #262626;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #a370f7;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.introduction h3, .useful-sites h3 {
+    font-size: 1.5rem;
+    color: #b5a3ff;
+    margin-bottom: 10px;
+}
+
+.introduction p, .useful-sites p {
+    color: #a8a8a8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+a {
+    color: #b5a3ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a370f7;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quote img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.quote p {
+    color: #a370f7;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #262626;
+    color: #b5a3ff;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}

@@ -1,0 +1,25 @@
+.main {
+    margin: 30px;
+    align-items: center;
+    text-align: left;
+}
+
+.texto h2 {
+    text-align: center;
+}
+
+.texto p {
+    background-color: rgb(0, 5, 19);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imgmain {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.imgmain p{
+    color: rgb(93, 161, 250);
+    border: 0px solid red;
+}

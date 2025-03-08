@@ -1,0 +1,47 @@
+.main {
+    display: block;
+}
+
+.whatsapp, .instagram {
+    display: flex;
+    overflow: auto;
+    flex: left;
+}
+
+.imgmain, .imgmain2 {
+    margin-right: 15px;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: #fd00d2;
+}
+
+.imgmain, .imgmain2, img {
+    width: 150px;
+    border-radius: 150px;
+}
+
+.home, .produtos, .local{
+    background: linear-gradient(150deg, rgb(67, 186, 255), rgb(27, 1, 77));
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.home:hover, .produtos:hover, .local:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.home img {
+    width: 50px;
+}
+
+.produtos img {
+    width: 88px;
+}
+
+.local img {
+    width: 49px;
+}

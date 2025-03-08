@@ -1,0 +1,749 @@
+/*Comentários*/
+/*
+    Todo o código aqui será comentado
+
+    Seletor de elementos para modificar:
+    Para selecionar um elemento para modificar, podemos escolher uma estrutura do nosso código, 
+    como body ou identificador da parte que desejamos modificar
+
+    Por exemplo:
+    *Para id
+    - Código HTML:
+    <h1 id="welcome">Seja bem-vindo(a)</h1> 
+
+    - Código CSS:
+    #welcome {
+        Modificações...
+    }
+
+    *Para class;
+    -Código HTML:
+    <div class="heading"></div>
+
+    - Código CSS:
+    .heading {
+        Modificações;
+    }
+    OBS: Depois disso, o título em h1 identificado por welcome será modificado
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&family=Smooch+Sans:wght@100..900&display=swap');
+
+/*Seletor de grupo/tag*/
+body { /*Selecionando o elemento que desejamos modificar, no caso body*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk0Wl6fGBPSJZdpJ85Zevl3OAhfQ4Pyo5FhQ&s");
+    background-repeat: no-repeat;
+}
+
+h1, p{
+    color: rgb(0, 0, 0);
+}
+
+/*Seletor de id*/
+#welcome {
+    margin-left: 10px;
+    font-size: 30px;
+    background-color: blue;
+}
+
+/*Seletor de class*/
+.heading {
+    color: red;
+    background-color: blueviolet;
+}
+
+/*Seletor de class específico*/
+h1.heading2 {
+    background-color: aqua;
+}
+
+/*Seletor universal de todos os elementos da página*/
+* {
+    color: crimson;
+}
+
+.margins {
+    margin-top: 50px;
+    margin-bottom: 20%;
+    margin-left: 50%;
+    margin-right: 10px
+}
+
+.margins2 {
+    margin: 10px;
+}
+
+b.margins3{
+    margin: 20px 0px 0px 40px;
+}
+
+p.margins3{
+    margin: inherit; /*Herança da tag b.margins3*/
+}
+
+.border {
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+.padding {
+    background-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.heightandwidth {
+    background-color: rgb(46, 0, 46);
+    padding: 5px;
+    height: 20px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 20px;
+}
+
+.heightandwidth a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.outlines {
+    border-style: dotted;
+    outline-style: solid;
+    outline-offset: 5px;
+}
+
+.textos {
+    color: blue;
+    background-color: red;
+    text-align-last: center;
+    text-decoration-line: underline overline;
+    text-decoration-color: cyan;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 10px;
+    text-transform: lowercase;
+    text-indent: 30px;
+    letter-spacing: 50px;
+    margin-bottom: 50px;
+}
+
+.fonte {
+    font-family: "Rufina", serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.botao {
+    margin-left: 50%;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}   
+.botao:hover {
+    background-color: rgb(158, 158, 255);
+}
+
+a.link1 {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+a.link1:hover {
+    background-color: greenyellow;
+    padding: 15px;
+}
+
+a.link2 {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    border-radius: 5px;
+}
+a.link2:hover {
+    background-color: blue;
+    color: white
+}
+
+a.link3 {
+    color: black;
+    text-decoration: none;
+}
+a.link3:hover {
+    color: red;
+    border-bottom: 1px solid;
+}
+
+a.link4 {
+    text-decoration: none;
+    color:blue;
+    font-size: 20px;
+}
+a.link4:hover {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a.link5 {
+    cursor: help;
+}
+
+/*Tabelas*/
+.tabela td, th, .tabela{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tabela th{
+    height: 50px;
+}
+.tabela tr:hover {
+    background-color: rgb(255, 161, 193);
+}
+
+/*Display*/
+.tabela2 td, th, .tabela2{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    display: none;
+    visibility: hidden;
+}
+.tabela2 th{
+    height: 50px;
+}
+.tabela2 tr:hover {
+    background-color: rgb(110, 0, 37);
+}
+
+.block {
+    border: 1px solid red;
+    display: block;
+}
+
+.inline {
+    border: 1px solid red;
+    display: inline;
+}
+
+.inlineblock {
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.hidden {
+    border: 1px solid red;
+    display: hidden;
+}
+
+.ocupadisplay2 {
+    border: 1px solid red;
+}
+
+.red p, .green p, .blue p, .red, .green, .blue{
+    color: white;
+    display: inline-block;
+    height: 500px;
+    width: 100px;
+    max-width: 100px;
+    overflow: auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.modificarlink {
+    display: inline-block;
+    height: 10px;
+    margin-top: 100px;
+}
+
+.container {
+    display: inline-block;
+    background-color: blue;
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+
+.div1 {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+.div2 {
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    background-color: white;
+    position: sticky;
+}
+
+.div3 {
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+.container2 {
+    border: 1px solid red;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+div.container2 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+div.centrocontainer p{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.whats {
+    color: white;
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50px;
+}
+
+.dropdown-button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 135px;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover{
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: gray;
+}
+
+#username {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+.overflow {
+    overflow: auto;
+    background-color: blue;
+    color: white;
+    height: 100px;
+}
+
+.menusimples {
+    background-color: black;
+    padding: 5px;
+}
+
+.menusimples ul {
+    text-decoration: none;
+}
+
+.menusimples li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menusimples a {
+    text-decoration: none;
+}
+
+.loginexemplo {
+    float: right;
+    margin-right: 20px;
+}
+
+.float {
+    border: 1px solid red;
+    overflow: auto;
+}
+
+.float img {
+    float: left;
+    margin-right: 20px;
+}
+
+.flexprincipal {
+    background-color: blue;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.flexprincipal div{
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+/*
+Atributos CSS
+    - Misc
+    opacity: valor entre 0 e 1;
+    color: nome/código da cor;
+    cursor: none, wait, text, help etc;
+
+    - Text
+    color: nome ou código da cor;
+    background-color: nome ou código da cor;
+    text-align: left, center, right ou justify; (alinha todo o texto)
+    text-align-last: left, center, right ou justify; (alinha a ultima linha do texto)
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    vertical-align: top, bottom, right ou justify;
+    text-decoration: overline purple solid 6px; (tudo em uma unica linha)
+    text-decoration-line: underline, line-through, overline ou none;
+    text-decoration-style: dashed, double ou dotted;
+    text-decoration-thickness: Xpx;
+    text-transform: lowercase, uppercase ou capitalize;
+    text-indent: Xpx;
+    letter-spacing: 50px;
+    line-height: valores decimais;
+    word-spacing: Xpx;
+
+    - Font
+    font-family: nome da fonte;
+    font-size: Xpx;
+    font-style: italic, oblique ou normal;
+    font-weight: bold, Xpx ou Xem (n° de pixel*16);
+
+    - Background
+    background-color: nome/código da cor;
+    background-image: url("url da imagem");
+    background-position: right
+    background-size: em pixels ou %, contain ou cover;
+    background-repeat: repeat, repeat-x, repeat-y ou no-repeat;
+    background-position: top, right, center, bottom ou left;
+    background: color, url, position, repeat e position;
+
+    - Border: Borda
+    tipos -> solid, dotted, dashed, double, groove, ridge, inset, outset, none ou hidden
+    border-style: type(s);
+    border-color: cor1, cor2, cor3, cor4;
+    border-top-style: type(s);
+    border-right-style: type(s);
+    border-bottom-style: type(s);
+    border-left-style: type(s);
+    border-width: Xpx (top) Xpx (right) Xpx (bottom) Xpx (left);
+    border: Xpx type(s) color;
+    border-top: Xpx type(s) color;
+    border-right: Xpx type(s) color;
+    border-bottom: Xpx type(s) color;
+    border-left: Xpx type(s) color;
+    border-radius: Xpx;
+    border-collapse: collapse;
+
+    - Margin: Distância do afastamento das margens da página (preenchimento pela parte de fora)
+    margin-top: Xpx ou %;
+    margin-right; Xpx ou %;
+    margin-bottom: Xpx ou %;
+    margin-left: Xpx ou %;
+    margin: Xpx (top) Xpx (right) Xpx (bottom) Xpx (left);
+
+    - Padding: Espaço entre elementos (preenchimento pela parte de dentro)
+    padding: Xpx (top) Xpx (right) Xpx (bottom) Xpx (left);
+    padding-top: Xpx;
+    padding-right: Xpx;
+    padding-bottom: Xpx;
+    padding-left: Xpx;
+
+    - Height and Width: Altura e Largura
+    height: Xpx;
+    width: Xpx ou %;
+    max-height: Xpx ou %;
+    max-width: Xpx ou %;
+
+    - Outline
+    tipos -> solid, dotted, dashed, double, groove, ridge, inset, outset, none ou hidden
+    outline-style: solid,
+
+    - Icons
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    - Display
+    O modo como as coisas são apresentadas
+        -> Tipos de display:
+            block (div, h1, p, form, header, footer, section);
+                organiza usando um bloco inteiro da página
+            inline (a, span, img)
+                organiza usando o espaço necessário
+            flex
+                organiza os itens lado a lado
+
+    display: block, inline, inline-block*, flex*, grid, none;
+    visibility: hidden;
+
+    - Position
+    position: static, relative, fixed, absolute, sticky;
+    top: Xpx;
+    right: Xpx;
+    bottom: Xpx;
+    left: Xpx;
+    z-index: valores inteiros; (camada atual do elemento na pagina)
+
+    - Combinators
+    I)
+        -> Html
+        <h1>
+            <b>Texto1</b>
+            <p>
+                <b>Texto2</b>
+            </P>
+        </h1>
+
+        -> CSS
+        h1 b {
+            color: red;
+        }
+    modificados: Texto1, Texto2 (todos elementos b da tag h1)
+
+    II)
+        -> Html
+        <h1>
+            <b>Texto1</b>
+            <b>Texto2</b>
+            <p>
+                <b>Texto3</b>
+            </P>
+            <b>Texto4</b>
+        </h1>
+
+        -> CSS
+        h1 > b {
+            color: red;
+        }
+        modificados: Texto 1, Texto 2, Texto 4 (apenas elementos diretos/filhos da tag h1)
+
+    III)
+        -> Html
+        <h1>
+            <b>Texto1</b>
+            <b>Texto2</b>
+            <p>
+                <b>Texto3</b>
+            </P>
+            <b>Texto4</b>
+        </h1>
+        <b>Texto 5</b>
+
+        -> CSS
+        h1 + b {
+            color: red;
+        }
+        modificados: Texto 5 (o primeiro elemnto depois de h1)
+
+    IV)
+        -> Html
+        <h1>
+            <b>Texto1</b>
+            <b>Texto2</b>
+            <p>
+                <b>Texto3</b>
+            </P>
+            <b>Texto4</b>
+        </h1>
+        <b>Texto 5</b>
+        <b>Texto 6</b>
+
+        -> CSS
+        h1 ~ b {
+            color: red;
+        }
+        modificados: Texto 5, Texto 6(os próximos elemntos depois de h1)
+
+    - Attribute selectors
+    I) div[class] {
+        modificações do elemento
+    }
+
+    II) div[class="nome-da-classe"] {
+        modificações do elemento
+    }
+
+    III) div.nome-da-classe {
+        modificações do elemento
+    }
+    
+    - Overflow
+    O que acontecerá com o conteúdo quando ele exceder o tamanho sugerido
+    overflow: visible, hidden, scroll ou auto;
+
+    - Float
+    flaot: left, right ou center;
+
+    - Media Queries
+    smartphones, tablets (em pé), tablets (deitado), desktop ou tv
+    Smartphones (600px para baixo) 
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: red;
+        }
+    }
+
+    Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima)
+    @media only screen and (min-width: 600px) {
+        body {
+            background-color: green;
+        }
+    }
+    Dispostivos Médios (Tablets deitados, 768px para cima)
+    @media only screen and (min-width: 768px) {
+        body {
+            background-color: blue;
+        }
+    }
+
+    Dispostivos Largos (laptops/desktops, 992px para cima)
+    @media only screen and (min-width: 992px) {
+        body {
+            background-color: purple;
+        }
+    }
+
+    Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima)
+    @media only screen and (min-width: 1200px) {
+        body {
+            background-color: yellow;
+        }
+    }
+
+    - Flex
+    display: flex;
+    flex-direction: row, row-reverse, column ou column-reverse;
+    flex-wrap: nowrap, wrap;
+    flexflow: row wrap;
+    justify-content: flex-start, flex-end, center, space-around ou space-between;
+    align-items: flex-start, center ou flex-end;
+    align-content: flex-start, center ou flex-end;
+    flex-grow: numero de crescimento;
+
+    - Gap
+    gap: Xpx;
+*/
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+        font-size: 35px;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: green;
+        font-size: 30px;
+    }
+}
+
+/* Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+        font-size: 25px;
+    }
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: purple;
+        font-size: 20px;
+    }
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: yellow;
+    }
+}

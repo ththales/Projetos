@@ -1,0 +1,19 @@
+----- Lista de Clientes -----
+Nome: Thales
+Celular: 213123
+Localizacao: 12313
+Produtos adquiridos: 12321
+Data da ultima compra: 2133
+
+Nome: Paulinho porco silva
+Celular: 123213
+Localizacao: 313
+Produtos adquiridos: 13
+Data da ultima compra: 123
+
+Nome: Maria silva
+Celular: 3032133213
+Localizacao: Goiania, goias
+Produtos adquiridos: Vanilla
+Data da ultima compra: 
+

@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+    .main {
+        display: block;
+        text-align:center;
+    }
+    .main img {
+        margin-right: 40px;
+    }
+}
+
+.main p {
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgmain img {
+    width: 250px;
+    border: 3px solid rgb(67, 186, 255);
+    border-radius: 150px;
+    margin-left: 50px;
+}
+
+.contato, .produtos, .local{
+    background: linear-gradient(150deg, rgb(67, 186, 255), rgb(27, 1, 77));
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.contato:hover, .produtos:hover, .local:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.contato img {
+    width: 50px;
+}
+
+.produtos img {
+    width: 88px;
+}
+
+.local img {
+    width: 49px;
+}

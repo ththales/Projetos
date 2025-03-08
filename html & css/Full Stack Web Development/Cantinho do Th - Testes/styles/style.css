@@ -1,0 +1,121 @@
+/*Corpo e parágrafos*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(540deg, rgb(1, 0, 14), rgb(0, 18, 70));
+    color: white;
+}
+
+h1, h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(93, 161, 250);
+}
+
+/*Barra de navegação*/
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    background: linear-gradient(30deg, rgb(0, 14, 54), black);
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.nav ul, a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+a:hover {
+    color: rgb(153, 93, 250);
+}
+
+/*Footer*/
+footer {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.bottombar img {
+    width: 30px;
+    float: left;
+}
+
+.bottombar a {
+    display: inline-block;
+}
+
+/* Media Queries */
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .topbar {
+        display: block;
+        padding: 5px;
+    }
+    .nav ul, a {
+        display: inline-block;
+        flex-direction: column;
+        justify-content:flex-start;
+        padding-bottom: 10px;
+    }
+    footer {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 12px;
+    }
+    
+    .bottombar img {
+        align-items: center;
+        width: 30px;
+    }
+    
+    .bottombar a{
+        justify-content: center;
+    }
+}
+
+/* Dispositivos pequenos (600px para cima) */
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Tablets (768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Laptops/Desktops (992px para cima) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Telas grandes (1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
