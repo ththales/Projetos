@@ -46,10 +46,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100px;
 }
 
 header img{
     width: 100px;
+    width: 100px;
+    display: block;
+    visibility: visible;
 }
 
 .main {
@@ -102,3 +106,41 @@ header img{
     margin-bottom: 0px;
 }
 
+/* Media Queries */
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-top: 20%;
+    }
+    .main {
+        display: block;
+        padding: 5px;
+        margin: 20px;
+    }
+}
+
+/* Dispositivos pequenos (600px para cima) */
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Tablets (768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Laptops/Desktops (992px para cima) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Telas grandes (1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
